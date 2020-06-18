@@ -1,0 +1,190 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+body {
+    /*background: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);*/
+    /*background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);*/
+    /*background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);*/
+    /*background: #647d79;*/
+    margin: 0;
+    padding: 0;
+    font: 400 1.6rem/1.5 'Hind Guntur', system-ui, 'Segoe UI', sans-serif;
+    color: white
+}
+
+main,
+footer {
+    padding: 35px
+}
+
+.name {
+    font-family: 'Roboto', sans-serif;
+    text-transform: none;
+    color: #f8f8f8;
+    font-weight: 600;
+    margin: 16px 0;
+    line-height: 1.2;
+
+}
+
+h1 {
+    color: white;
+    margin: 16px 0;
+    font-weight: 600;
+    font-family: 'Amatic SC', Helvetica, 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    line-height: 1.2
+}
+
+h1 span::before {
+    content: "";
+    display: block
+}
+/*slick carbon*/
+a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    /*background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);*/
+    /*background: linear-gradient(120deg, #caa1a3 0%, #8daf9b 100%) no-repeat 0 76%/100% 0.3em;*/
+    background: linear-gradient(120deg, #29323c 0%, #485563 100%) no-repeat 0 76%/100% 0.05em;
+    -webkit-transition: background 0.25s ease-in;
+    transition: background 0.25s ease-in
+}
+
+a:hover {
+    background: linear-gradient(120deg, #29323c 0%, #485563 100%) no-repeat 0 20%/100% 1.35em
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+footer .credits {
+    font-size: 1.2rem
+}
+
+footer .socials {
+    display: -webkit-box;
+    display: flex;
+    font-size: 2.5rem
+}
+
+footer .socials a {
+    padding: 2px;
+    margin: 0 10px
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+    main,
+    footer {
+        padding: 30px 10%
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        text-align: center
+    }
+    .logo-signature {
+        width: 225px;
+        width: 45vw
+    }
+    .logo-signature path {
+        fill: white
+    }
+    h1 {
+        font-size: 2.5rem;
+        font-size: 7vw
+    }
+    .banner {
+        height: 250px;
+        height: 32vh;
+        margin: 20px 0;
+        background: url("https://lh3.googleusercontent.com/gG27oLvwCKlPYJkLBkBn4wqX7zNeOJdj-38DMfycOPikf-7T5e9POkW69x4SzO4fGrVGDTYmoCmQpAw0SSLlRvo8Ic62NSzOoJP5f-abDQyr_BottBGeBbR7HHBl4afLXBdvt589HLQYi8s2ayWWw3pD7UF1S8_iOdJ8lD-EvaQgXL1JColTPiJCbn6kc01L5YA4TPfEavqfWonyxLT2Gym6Mblf7Vf4cAAWCabVW8F9fYNdTMV0mrgu-9T_7t4B4JPwDSiOjwo4Uoniuc9N21Y4Rpeihx1gio6hbC29CNIi8E0BvNB0iKFvKimwrTeWXLiB7uEtE2wWkxkd5es_b-4E_s-JLhsJ3fG_XBBpEKrPKLyLpEwjytrBJJs-Jhkhk3e3msrPPRkjUd05vATDYOpvBXStWGMPOl2VItY9V4bjGtJB5-CC6B_KEXpJ9QhkfabqIBMy3DVlwUh4Az_KXR5jV3kLISQO0YPfqREWP8STuPOT8pqj7YIVm_PWUpL2ovIZdHYuEnhC1Q6_9pzIPNGNmxDyLFRmy_RI6_MWrapvvPVj_lfa2WWWRFinv6hb-c9OvfDLLXnDKzlICJH5NIqlrV9u0ugj1q-JgtnGeZknfXABG1bLjaNPXGd3oMHW5vFls3cYUMr_qesEiVJ5493ynXwvI05SAZRVdPlZC8Qi-1H36_zeBEiByI2EpA=w1932-h1482-no?authuser=0") no-repeat center/cover;
+        /*background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.25))), url(https://lh3.googleusercontent.com/gG27oLvwCKlPYJkLBkBn4wqX7zNeOJdj-38DMfycOPikf-7T5e9POkW69x4SzO4fGrVGDTYmoCmQpAw0SSLlRvo8Ic62NSzOoJP5f-abDQyr_BottBGeBbR7HHBl4afLXBdvt589HLQYi8s2ayWWw3pD7UF1S8_iOdJ8lD-EvaQgXL1JColTPiJCbn6kc01L5YA4TPfEavqfWonyxLT2Gym6Mblf7Vf4cAAWCabVW8F9fYNdTMV0mrgu-9T_7t4B4JPwDSiOjwo4Uoniuc9N21Y4Rpeihx1gio6hbC29CNIi8E0BvNB0iKFvKimwrTeWXLiB7uEtE2wWkxkd5es_b-4E_s-JLhsJ3fG_XBBpEKrPKLyLpEwjytrBJJs-Jhkhk3e3msrPPRkjUd05vATDYOpvBXStWGMPOl2VItY9V4bjGtJB5-CC6B_KEXpJ9QhkfabqIBMy3DVlwUh4Az_KXR5jV3kLISQO0YPfqREWP8STuPOT8pqj7YIVm_PWUpL2ovIZdHYuEnhC1Q6_9pzIPNGNmxDyLFRmy_RI6_MWrapvvPVj_lfa2WWWRFinv6hb-c9OvfDLLXnDKzlICJH5NIqlrV9u0ugj1q-JgtnGeZknfXABG1bLjaNPXGd3oMHW5vFls3cYUMr_qesEiVJ5493ynXwvI05SAZRVdPlZC8Qi-1H36_zeBEiByI2EpA=w1932-h1482-no?authuser=0) no-repeat center/cover;*/
+        /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)), url(https://lh3.googleusercontent.com/gG27oLvwCKlPYJkLBkBn4wqX7zNeOJdj-38DMfycOPikf-7T5e9POkW69x4SzO4fGrVGDTYmoCmQpAw0SSLlRvo8Ic62NSzOoJP5f-abDQyr_BottBGeBbR7HHBl4afLXBdvt589HLQYi8s2ayWWw3pD7UF1S8_iOdJ8lD-EvaQgXL1JColTPiJCbn6kc01L5YA4TPfEavqfWonyxLT2Gym6Mblf7Vf4cAAWCabVW8F9fYNdTMV0mrgu-9T_7t4B4JPwDSiOjwo4Uoniuc9N21Y4Rpeihx1gio6hbC29CNIi8E0BvNB0iKFvKimwrTeWXLiB7uEtE2wWkxkd5es_b-4E_s-JLhsJ3fG_XBBpEKrPKLyLpEwjytrBJJs-Jhkhk3e3msrPPRkjUd05vATDYOpvBXStWGMPOl2VItY9V4bjGtJB5-CC6B_KEXpJ9QhkfabqIBMy3DVlwUh4Az_KXR5jV3kLISQO0YPfqREWP8STuPOT8pqj7YIVm_PWUpL2ovIZdHYuEnhC1Q6_9pzIPNGNmxDyLFRmy_RI6_MWrapvvPVj_lfa2WWWRFinv6hb-c9OvfDLLXnDKzlICJH5NIqlrV9u0ugj1q-JgtnGeZknfXABG1bLjaNPXGd3oMHW5vFls3cYUMr_qesEiVJ5493ynXwvI05SAZRVdPlZC8Qi-1H36_zeBEiByI2EpA=w1932-h1482-no?authuser=0) no-repeat center/cover*/
+    }
+    section {
+        border-bottom: 1px solid white;
+        padding-bottom: 20px
+    }
+    footer {
+        text-align: center;
+        padding-top: 0
+    }
+    .socials {
+        width: 50%;
+        width: 50vw;
+        margin: 20px auto;
+        -webkit-box-pack: space-evenly;
+        justify-content: space-evenly
+    }
+}
+
+@media (min-width: 500px) {
+    body {
+        font-size: 1.7rem
+    }
+}
+
+@media (min-width: 801px) {
+    main {
+        background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.25))), url(../image.jpg) no-repeat left;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.25)), url(../image.jpg) no-repeat left;
+        background-size: cover
+    }
+    .logo-signature {
+        width: 300px
+    }
+    .logo-signature path {
+        fill: #647d79
+    }
+    section {
+        width: 60%;
+        max-width: 450px
+    }
+    h1 {
+        font-size: 4rem
+    }
+    footer {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between
+    }
+}
+
+@media (min-width: 800px) and (min-height: 900px) {
+    main {
+        background-position: 35% center
+    }
+    .logo-signature {
+        width: 415px
+    }
+    section {
+        font-size: 1.8rem
+    }
+    h1 {
+        font-size: 5.5rem
+    }
+}
+
+@media (min-width: 801px) and (min-height: 700px) {
+    main {
+        height: 85vh
+    }
+    footer {
+        height: 15vh
+    }
+}
